@@ -1,0 +1,64 @@
+.content {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: rgb(173, 201, 228);
+    text-align: center;
+    transition: 0.3s;
+    height: 20vh;
+}
+
+.content:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+    margin-left: 50vh;
+    margin-top: 20vh;
+    width: 40%;
+}
+
+.titleQuote{
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+
+.quote-button {
+    height: 5vh;
+    width:30vh;
+    margin-top: 10px;
+    margin-left: 25vh;
+    border:2px solid teal;
+    color:#045;
+    background-color: darkseagreen;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: large;
+    padding:5px;
+    text-decoration: none;
+    text-align: center;      
+}
+
+.quote-button:hover {
+    cursor:pointer;
+	background:rgb(29, 211, 181);
+	color: chocolate;	
+}
+
+.quote-author {
+    font-family: 'Raleway', sans-serif;
+    font-size: 100%;
+    font-weight: 600;
+    z-index: 1;
+    font-style: italic;
+    color: #045;
+  
+}
+
+.quoteText {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: #045;
+    width: 75vh;
+}
