@@ -1,64 +1,70 @@
-.content {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    background-color: rgb(173, 201, 228);
-    text-align: center;
-    transition: 0.3s;
-    height: 20vh;
-}
-
-.content:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.container {
-    padding: 2px 16px;
-    margin-left: 50vh;
-    margin-top: 20vh;
-    width: 40%;
-}
-
 .titleQuote{
-    font-family: 'Raleway', sans-serif;
-    font-size: 40px;
-    font-weight: 600;
+    font-family: monospace;
+    font-size: 47px;
+    font-weight: 500;
     color: white;
+    margin-left: 33%;
 }
 
-.quote-button {
-    height: 5vh;
-    width:30vh;
-    margin-top: 10px;
-    margin-left: 25vh;
-    border:2px solid teal;
-    color:#045;
-    background-color: darkseagreen;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: large;
-    padding:5px;
-    text-decoration: none;
-    text-align: center;      
+.content {
+    background: #fff;
+    max-width: 400px;
+    min-height: 200px;
+    border-radius: 5px;
+    height: 400px;
+    overflow: hidden;
+    margin-left: 35%;
+    margin-top: 5%;
 }
 
-.quote-button:hover {
-    cursor:pointer;
-	background:rgb(29, 211, 181);
-	color: chocolate;	
+blockquote {
+    border-left: 10px solid #490A3D;
+    margin: 10px 0px 0px 15px;
+    padding: 15px 5px 00px 25px;
+    font-size: 18px;
 }
 
-.quote-author {
-    font-family: 'Raleway', sans-serif;
-    font-size: 100%;
-    font-weight: 600;
-    z-index: 1;
-    font-style: italic;
-    color: #045;
-  
+.subtitle {
+    background: #fff;
+    max-width: 400px;
+    margin-left: 35%;
+    margin-top: -1%;
+    border-radius: 5px
 }
 
 .quoteText {
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
+    font-family: fantasy;
     color: #045;
-    width: 75vh;
+    display: inline;
+    margin: 20px 0px 10px 0px;
+    font-size: 25px;
+}
+
+.quote-author {
+    font-family: cursive;
+    font-size: 17px;
+    font-weight: bold;
+    color: #045;
+    margin-top: 20px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.quote-button {
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin-left: 25%;
+    color: #ffff;
+    background-color: #490A3D;
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 25px;
+    height: 50px;
+    width: 50%;
+    cursor: pointer;
+    text-align: center;     
+}
+
+.quote-button:hover {
+    box-shadow: 1px 1px 10px #490A3D;
 }

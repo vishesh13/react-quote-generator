@@ -2,6 +2,9 @@ import React from 'react';
 import axios from 'axios';
 import QuoteGeneratorView from './QuoteGeneratorView';
 
+/**
+ * Container class with handler methods
+ */
 class QuoteGeneratorContainer extends React.Component {
     constructor(props) {
         super(props);
@@ -13,6 +16,9 @@ class QuoteGeneratorContainer extends React.Component {
         this.handleGetQuote = this.handleGetQuote.bind(this);
     }
 
+    componentDidMount() {
+        document.getElementById('NEW_QUOTE_BUTTON').click();
+    }
     /**
      * handler function to retrieve quote service call request
      * @param {*} event 
@@ -35,11 +41,10 @@ class QuoteGeneratorContainer extends React.Component {
             })
         }
     }
+
     render() {
         const { quote, character, quoteReceived } = this.state;
         let buttonText = quoteReceived ? 'New Quote' : 'Try Again!!!';
-        //let quoteText = ;
-        //let author = quoteReceived ? { character } : '';
 
         return (
             <QuoteGeneratorView handleGetQuote={this.handleGetQuote} quote={quote} character={character} buttonText={buttonText} />
